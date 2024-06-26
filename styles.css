@@ -11,13 +11,18 @@ html {
 --title-font: Verdana, Geneva, Tahoma, sans-serif;
 --code-font: 'Courier New', Courier, monospace;
 --color-accent: rgb(212, 71, 11);
+--color-accent2: rgb(28, 25, 23);
 --color-text: rgb(42, 14, 2);
 --color-text-light: rgb(132, 103, 91);
+--color-navbar: rgb(28, 25, 23, 0.9);
+--color-background: rgb(244, 229, 215, 0.9);
+--color-elements: #e9cbaf;
+
 }
 
 body{
   font-family: var(--code-font);
-  background-color:rgb(242, 243, 244);
+  background-color:var(--color-background);
   margin:0;
   padding:0;
   height:100%;
@@ -49,7 +54,7 @@ a{
    display:flex;
    align-items:center;
    justify-content:right;
-   background:linear-gradient(180deg, rgba(34, 17, 10, 0.95) 70%, var(--color-accent)90% );
+   background:linear-gradient(180deg, var(--color-navbar) 70%, var(--color-accent)90% );
    width:100%;
    height:60px;
    -webkit-backdrop-filter: blur(5px);
@@ -193,7 +198,7 @@ a{
 .hero-title h1{
   font-weight:normal;
   cursor:default;
-  color: var(--color-text);
+  color: var(--color-accent2);
 }
 
 .hero-title h1:first-of-type{
@@ -217,7 +222,7 @@ a{
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 7%;
-  background: linear-gradient(-1800deg, rgba(0, 0, 0, 0.9)50%, var(--color-accent) 80% );
+  background: linear-gradient(-1800deg, var(--color-accent2), var(--color-accent) 80% );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -229,6 +234,7 @@ a{
   left: calc(50% - 85px);
   text-align: center;
   opacity: 0%;
+  border:none;
   animation: fadeIn 0.3s ease-in 0.55s forwards,
              scroll-button-pulse 2s infinite;
 }
@@ -339,7 +345,8 @@ a{
   width:100%;
   max-width: 1453px;
   height: auto;
-  border:solid black;
+  border:solid var(--color-accent2);
+  background-color: var(--color-elements);
 }
 
  .project-section-title{
@@ -347,7 +354,7 @@ a{
    align-items:center;
    justify-content:left;
    font-weight: normal;
-   background:linear-gradient(30deg, rgba(0, 0, 0, 0.9) 60%, var(--color-accent) 100% );
+   background:linear-gradient(30deg, var(--color-accent2) 60%, var(--color-accent) 100% );
    width:calc(100% + 4%);
    height:60px;
    color:white;
@@ -362,7 +369,6 @@ a{
    flex-wrap:wrap;
    justify-content:center;
    align-items:center;
-   background-color: #f3f3f3;
    gap:2%;
    height:100%;
    max-width: 1500px;
@@ -488,11 +494,11 @@ a{
    flex-wrap:wrap;
    justify-content:center;
    align-items:center;
-   background-color:#f3f3f3;
+   background-color:var(--color-elements);
    padding-bottom:40px;
    gap:1em;
    margin-bottom:20px;
-   border: black solid;
+   border: var(--color-accent2) solid;
 
 }
 
