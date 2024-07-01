@@ -160,14 +160,13 @@ a{
   #navbar{
    justify-content:center;
    flex:1;
-   min-width:0;
+   min-width:0; 
    overflow:hidden;
   }
 
   .nav-link{
-    padding:none;
-    width:100%;
-    font-size: 1em;
+    width:40%;
+    font-size: 0.9em;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -175,8 +174,19 @@ a{
   #nav-icons-right{
     align-items:center;
     justify-content:center;
-    width: 50%;
+    width:70%;
+    margin-right: 7%;
    }
+
+   #nav-icons-left{
+     width: 30%;
+     margin-right: 12%;
+   }
+
+   .nav-image{
+    width: 50px;
+   }
+
 }
 
 /* Hero Section */
