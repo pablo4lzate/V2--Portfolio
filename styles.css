@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+
 html {
   box-sizing: border-box;
   scroll-behavior:smooth;
@@ -8,7 +10,8 @@ html {
 }
 
 :root{
---title-font: Verdana, Geneva, Tahoma, sans-serif;
+/* --title-font: Verdana, Geneva, Tahoma, sans-serif; */
+--title-font:  "Outfit", sans-serif;
 --code-font: 'Courier New', Courier, monospace;
 --color-accent: rgb(212, 71, 11);
 --color-accent2: rgb(28, 25, 23);
@@ -18,7 +21,12 @@ html {
 --color-background: rgb(244, 229, 215, 0.9);
 --color-elements: #e9cbaf;
 
+--color-scrolldown1 :rgb(42, 14, 2);
+--color-scorlldown2:#c0ada5;
+
 }
+
+
 
 body{
   font-family: var(--code-font);
@@ -30,8 +38,8 @@ body{
 
 .padding{
   width: 100%;
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 @media only screen and (max-width: 900px) {
@@ -202,27 +210,37 @@ a{
   min-height: 100vh;
 }
 
+#welcome-section .padding{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .hero-title{
   margin: 0 auto;
   padding-top: 20%;
   letter-spacing: -0.07em;
-  text-align: left;
   font-family: var(--title-font);
-  font-size: 3.375em;
+  font-size: clamp(10px,2.9vw,60px);
   line-height: 0;
-}
+} 
 
 .hero-title h1{
   font-weight:normal;
   cursor:default;
-  color: var(--color-accent2);
 }
 
 .hero-title h1:first-of-type{
   margin-left: -1.5%;
-  letter-spacing: -0.07em;
+  letter-spacing: -.065em;
   animation: fadeIn 0.3s ease-in forwards;
-  font-size: 4em;
+  font-size: 4.5em;
+  font-weight: 450;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: var(--color-accent2);
+
 }
 
 #apellido {
@@ -236,10 +254,11 @@ a{
   letter-spacing: 0.05em;
   opacity: 0%;
   animation: fadeIn 0.3s ease-in 0.3s forwards;
+  margin-top: -4%;
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 7%;
-  background: linear-gradient(-1800deg, var(--color-accent2), var(--color-accent) 80% );
+  background: linear-gradient(-1800deg, var(--color-accent2), var(--color-accent) 90% );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -247,6 +266,7 @@ a{
 
 .scroll-down-button{
   position: absolute;
+  font-size: 1.2em;
   top: calc(100vh - 30px);
   left: calc(50% - 85px);
   text-align: center;
@@ -267,13 +287,13 @@ a{
 
 @keyframes scroll-button-pulse{
   0%{
-    color: var(--color-text-light);
+    color: var(--color-scrolldown1);
   }
   50%{
-    color:var(--color-text);
+    color:var(--color-scorlldown2);
   }
   100%{
-    color: var(--color-text-light);
+    color: var(--color-scorlldown1);
   }
 }
 
@@ -285,8 +305,9 @@ a{
 }
 
 .hero-title{
+  padding-top: 1vh;
   letter-spacing: -.03em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 400;
   line-height: 0.8;
   overflow: hidden;
