@@ -69,7 +69,8 @@ a{
    display:flex;
    align-items:center;
    justify-content:right;
-   background:linear-gradient(180deg, var(--color-navbar) 70%, var(--color-accent)90% );
+   background:linear-gradient(180deg, var(--color-accent2) 2%, var(--color-navbar)70% );
+   /* background-color: var(--color-navbar); */
    width:100%;
    height:60px;
    -webkit-backdrop-filter: blur(5px);
