@@ -224,6 +224,7 @@ a{
   font-family: var(--title-font);
   font-size: clamp(10px,2.9vw,60px);
   line-height: 0;
+  text-align: right;
 } 
 
 .hero-title h1{
@@ -249,8 +250,9 @@ a{
 }
 
 .hero-subtitle{
+  text-align: right;
   font-family:  var(--code-font);
-  font-size: 0.9em;
+  font-size: 0.7em;
   letter-spacing: 0.05em;
   opacity: 0%;
   animation: fadeIn 0.3s ease-in 0.3s forwards;
@@ -337,7 +339,7 @@ h1{
 
 .hero-title{
   letter-spacing: -.08em;
-  font-size: 2.4em;
+  font-size: 1.8em;
   font-weight: 400;
   line-height: 0.8;
 
@@ -354,13 +356,13 @@ h1{
 @media only screen and (max-width: 1234px) and (min-width:982px) {
 
 #welcome-section{
-  margin-top: 20%;
+  margin-top: 6vh;
   margin-bottom:10%;
 }
 
 .hero-title{
   letter-spacing: -.05em;
-  font-size: 4.375em;
+  font-size: 2em;
   font-weight: 400;
   line-height: 0.1;
 }
@@ -369,13 +371,13 @@ h1{
 @media only screen and (max-width: 1480px) and (min-width:1234px) {
 
 #welcome-section{
-  margin-top: 20%;
+  margin-top: 6vh;
   margin-bottom:12%;
 }
 
 .hero-title{
   letter-spacing: -.08em;
-  font-size: 5.375em;
+  font-size: 2.375em;
   font-weight: 400;
   line-height: 0.1;
 }

@@ -1,0 +1,1 @@
+const nameTitle = document.getElementById
