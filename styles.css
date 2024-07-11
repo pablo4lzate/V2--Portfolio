@@ -82,6 +82,7 @@ a{
   align-items:center;
   justify-content:right;
   width: 50%;
+  gap: 0.5vw;
  }
 
  #nav-icons-left{
@@ -89,6 +90,7 @@ a{
   align-items:center;
   justify-content:left;
   width: 50%;
+  gap: 1vw;
  }
 
  .nav-image{
