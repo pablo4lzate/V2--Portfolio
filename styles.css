@@ -119,8 +119,6 @@ a{
   padding:1vh 0vh 1vh 0vw;
   margin-left:0vh;
   animation:nav-color-fade-out 0.2s ease-in-out forwards;
-  background-color: green;
-
 }
 
 .nav-link:hover{
