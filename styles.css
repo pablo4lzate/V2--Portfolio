@@ -332,7 +332,7 @@ a{
 
 .scroll-down-button{
   left: 33vw;
-  top: 95vh;
+  top: calc(100% - 5vh);
 }
 
 }  
