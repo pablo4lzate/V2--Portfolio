@@ -302,12 +302,8 @@ a{
 /* Hero-Responsive */
 @media only screen and (max-width: 702px) {
 
-#welcome-section{
-  padding-top: 40%;
-}
-
 .hero-title{
-  padding-top: 1vh;
+  padding-top: 20vh;
   padding-right: 1vw;
   letter-spacing: -.03em;
   font-size: 1.1em;
