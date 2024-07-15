@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 html {
   box-sizing: border-box;
@@ -12,7 +13,7 @@ html {
 :root{
 /* --title-font: Verdana, Geneva, Tahoma, sans-serif; */
 --title-font:  "Outfit", sans-serif;
---code-font: 'Courier New', Courier, monospace;
+--code-font: 'Source Code Pro', monospace;
 --color-accent: rgb(212, 71, 11);
 --color-accent2: rgb(28, 25, 23);
 --color-text: rgb(42, 14, 2);
@@ -228,7 +229,6 @@ a{
 } 
 
 .hero-title h1{
-  font-weight:normal;
   cursor:default;
 }
 
@@ -254,6 +254,7 @@ a{
   font-family:  var(--code-font);
   font-size: 0.7em;
   letter-spacing: 0.05em;
+  font-weight: 350;
   opacity: 0%;
   animation: fadeIn 0.3s ease-in 0.3s forwards;
   margin-top: -4%;
@@ -306,7 +307,7 @@ a{
   padding-top: 20vh;
   padding-right: 1vw;
   letter-spacing: -.03em;
-  font-size: 1.1em;
+  font-size: 1.185em;
   font-weight: 400;
   line-height: 0.8;
   overflow: hidden;
