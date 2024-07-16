@@ -209,7 +209,7 @@ a{
 
 #welcome-section{
   min-height: 100vh;
-}
+  }
 
 #welcome-section .padding{
   display: flex;
@@ -589,7 +589,7 @@ a{
  }
 
  #contact-text{
-  padding: 10% 2% 0% 2%;
+  padding: 3.5vw 2% 0% 2%;
   display: inline-block;
   font-size: 1em;
   width: 400px;
